@@ -33,4 +33,18 @@ class CalculatorTest {
         List<Integer> nums = Arrays.asList(1, 2, 3, null, 4);
         assertEquals(c.sumUp(nums), c.addAll(nums));
     }
+
+    @Test
+    void divide_worksForNonZeroDivisor() {
+        Calculator c = new Calculator();
+        assertEquals(2, c.divide(10, 5));
+        assertEquals(-3, c.divide(9, -3));
+    }
+
+    @Test
+    void substract_shouldSubtractTwoIntegers() {
+        Calculator c = new Calculator();
+        assertEquals(1, c.subtract(3, 2));
+        assertEquals(-5, c.subtract(-3, 2));
+    }
 }
