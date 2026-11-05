@@ -4,6 +4,10 @@ public class NumberUtils {
 
     public static int DEFAULT_LIMIT = 10;
 
+    private NumberUtils() {
+        // Utility-Klasse: nur statische Methoden, keine Instanzen
+    }
+
     // Langer, leicht „unnötig“ komplexer Code mit Magic Numbers
     public static boolean isSpecial(int n) {
         // Magic numbers 3, 5, 7
