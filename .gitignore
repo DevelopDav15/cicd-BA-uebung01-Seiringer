@@ -5,3 +5,5 @@ target/
 .idea/
 .vscode/
 .DS_Store
+# UE02 report (kept local, only the PDF is submitted)
+docs/
